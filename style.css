@@ -140,12 +140,10 @@ header {
     background-color: #C3DAB7;
 }
 
-.brandingContainer {
+.brandingContent {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 100px 0;
 }
 
 .brandingPhotos {
@@ -154,28 +152,32 @@ header {
     align-items: center;
 }
 
-/* need the parent of the circle text to be the img */
-.brandingImage {
-    width: 400px;
+.imageContainer {
+    position: relative;
 }
 
-.circleText {
+/* need the parent of the circle text to be the img */
+.imageContainer img {
+    width: 400px;
+    padding: 150px 0 50px 0;
+}
+
+div .circleText {
     background: rgba(0, 0, 0, 0);
     width: 200px;
     position: absolute;
+    top: -85px;
+    left: -85px;
 }
 
 .brandingParagraphs {
     display: flex;
     text-align: center;
-    padding: 60px 0 0 0;
     width: 60%;
+    padding: 0 0 100px 0;
 }
 
-.brandingText {
-    flex: 1 1 100px;
-}
-
+.brandingText,
 .designText {
     flex: 1 1 100px;
 }
