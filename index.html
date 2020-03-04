@@ -5,22 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creative</title>
     <script src="https://kit.fontawesome.com/11b975b2f5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <!-- This is the start of the body -->
-<body>
+<body class="index">
 
 <!-- This is the start of the header -->
     <header>
         <div class="wrapper">
             <nav class="primaryNav">
-                <div class="logo">
-                    <h1>Creative</h1>
-                </div>
-                <ul class="topList clearfix">
+                <ul class="leftNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+                <div class="logo">
+                    <h1>Creative</h1>
+                </div>
+                <ul class="rightNav">
                     <li><a href="#shop">Shop</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href=""><i class="fas fa-search"></i></a></li>
@@ -33,18 +36,18 @@
 
 <!-- This is the start of the main -->
     <main>
-        <section>
-            <div class="wrapper">
-                <div>
-                    <img src="./assets/homeCircleText.png" alt="Branding and Website Pros">
-                    <img src="./assets/home2.jpeg" alt="stylish wooden desk with large numbered black and white calendar, mac computer, plant, and incense in a bottle">
+        <section class="brandingSection">
+            <div class="wrapper brandingContainer">
+                <div class="brandingPhotos">
+                    <img class="circleText" src="./assets/homeCircleText.png" alt="Branding and Website Pros">
+                    <img class="brandingImage" src="./assets/home2.jpeg" alt="stylish wooden desk with large numbered black and white calendar, mac computer, plant, and incense in a bottle">
                 </div>
                 <div class="brandingParagraphs">
-                    <div class="branding">
+                    <div class="brandingText">
                         <h3>Branding</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quas commodi?</p>
                     </div>
-                    <div class="design">
+                    <div class="designText">
                         <h3>Design & Develop</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quas commodi?</p>
                     </div>
@@ -54,31 +57,36 @@
         <section>
             <div class="wrapper">
                 <div class="testimonials">
-                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <a class="previous" href="#slideshow" data-slide="prev">
                         <i class="fas fa-chevron-left"></i>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <img src="./assets/home3.jpeg" alt="print out of design with text and a fit male model without a shirt on">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet saepe deserunt sequi consequatur accusantium, fugit reprehenderit dolorem. Animi, error est mollitia blanditiis nulla, placeat unde aliquid magnam quis quas eaque illo dolorem sit in quam natus ea. Corporis, a maxime libero itaque animi quae autem. Suscipit provident facilis sint vel.</p>
-                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <div class="slides">
+                        <img src="./assets/home3.jpeg" alt="print out of design with text and a fit male model without a shirt on">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet saepe deserunt sequi consequatur accusantium, fugit reprehenderit dolorem. Animi, error est mollitia blanditiis nulla, placeat unde aliquid magnam quis quas eaque illo dolorem sit in quam natus ea. Corporis, a maxime libero itaque animi quae autem. Suscipit provident facilis.</p>
+                    </div>
+                    <a class="next" href="#slideshow" data-slide="next">
                         <i class="fas fa-chevron-right"></i>
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
             </div>
         </section>
-        <section>
-            <div>
+        <section class="iconSection">
                 <ul class="sectionContainer">
                     <li class="iconContainer">
-                        <i class="fas fa-magic" aria-hidden="true"></i>
+                        <div class="iconStyles">
+                            <i class="fas fa-magic" aria-hidden="true"></i>
+                        </div>
                         <div>
                             <h3>Unique Design</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia optio sapiente quod similique aspernatur.</p>
                         </div>
                     </li>
                     <li class="iconContainer">
-                        <i class="fas fa-map-pin" aria-hidden="true"></i>
+                        <div class="iconStyles">
+                            <i class="fas fa-map-pin" aria-hidden="true"></i>
+                        </div>
                         <div>
                             <h3>SEO Marketing</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia optio sapiente quod similique
@@ -86,7 +94,9 @@
                         </div>
                     </li>
                     <li class="iconContainer">
-                        <i class="fas fa-desktop" aria-hidden="true"></i>
+                        <div class="iconStyles">
+                            <i class="fas fa-desktop" aria-hidden="true"></i>
+                        </div>
                         <div>
                             <h3>Retina Ready</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia optio sapiente quod similique
@@ -94,7 +104,9 @@
                         </div>
                     </li>
                     <li class="iconContainer">
-                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        <div class="iconStyles">
+                            <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        </div>
                         <div>
                             <h3>Ecommerce Ready</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia optio sapiente quod similique
@@ -102,7 +114,9 @@
                         </div>
                     </li>
                     <li class="iconContainer">
-                        <i class="fas fa-sliders-h" aria-hidden="true"></i>
+                        <div class="iconStyles">
+                            <i class="fas fa-sliders-h" aria-hidden="true"></i>
+                        </div>
                         <div>
                             <h3>Advanced Options</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia optio sapiente quod similique
@@ -110,7 +124,9 @@
                         </div>
                     </li>
                     <li class="iconContainer">
-                        <i class="fas fa-smile" aria-hidden="true"></i>
+                        <div class="iconStyles">
+                            <i class="fas fa-smile" aria-hidden="true"></i>
+                        </div>
                         <div>
                             <h3>Customizable</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita officia optio sapiente quod similique
@@ -118,16 +134,17 @@
                         </div>
                     </li>
                 </ul>
-            </div>
         </section>
-        <section>
+        <section class="gridSection">
             <div class="wrapper">
                 <h4>Meet Our Team</h4>
                 <ul class="gridContainer">
                     <div class="firstColumn">
                         <li class="gridItems">
-                            <h3>Team Players</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia reprehenderit ea quos, libero voluptatum ipsa amet! Sapiente labore commodi nesciunt?</p>
+                            <div class="topText">
+                                <h3>Team Players</h3>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia reprehenderit ea quos, libero voluptatum ipsa amet! Sapiente labore commodi nesciunt?</p>
+                            </div>
                         </li>
                         <li class="gridItems">
                             <img src="./assets/home7.jpeg" alt="woman with brown hair in a striped tank top">

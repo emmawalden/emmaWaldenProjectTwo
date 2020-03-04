@@ -5,3 +5,292 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Design Colours & Fonts */
+
+/* Light sage: #C3DAB7 
+White: #fff
+White Two: #F6F6F6
+Black: #333;
+ */
+
+/* font-family: 'Montserrat', sans-serif regular=400 bold=700;
+font-family: 'Open Sans', sans-serif; regular=400*/
+
+html {
+    font-size: 62.5%;
+}
+
+body,
+ul,
+h1,
+h2,
+h3
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+	width: 90%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+/* Start of the general font styling */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 24px;
+    letter-spacing: 0.7px;
+}
+
+.index h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.7rem;
+}
+
+.blog h2,
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.7rem;
+}
+
+
+/* This is the start of the Nav on all pages */
+.primaryNav {
+    display: flex;
+    height: 50px;
+}
+
+.logo {
+    text-align: center;
+    flex: 1 0 50%;
+    margin: auto;
+}
+
+.leftNav,
+.rightNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 25%;
+}
+
+.topMenu {
+    visibility: hidden;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 4rem;
+
+}
+
+/* This is the start of the header */
+
+header {
+    height: 750px;
+    background-image: url(./assets/home1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* This is the start of the branding Section */
+
+.brandingSection {
+    background-color: #C3DAB7;
+}
+
+.brandingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.brandingPhotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* need the parent of the circle text to be the img */
+.brandingImage {
+    width: 400px;
+}
+
+.circleText {
+    background: rgba(0, 0, 0, 0);
+    width: 200px;
+    position: absolute;
+}
+
+.brandingParagraphs {
+    display: flex;
+    text-align: center;
+    padding: 60px 0 0 0;
+    width: 60%;
+}
+
+.brandingText {
+    flex: 1 1 100px;
+}
+
+.designText {
+    flex: 1 1 100px;
+}
+
+/* Start of the Testimonials Section */
+
+.testimonials {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 100px 0;
+}
+
+.testimonials a {
+    font-size: 3rem;
+}
+
+.previous,
+.next {
+    align-self: center;
+}
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.slides img {
+    border-radius: 50%;
+    align-self: center;
+    max-width: 225px;
+    margin: 0 0 50px 0;
+}
+
+.slides p {
+    text-align: center;
+    font-style: italic;
+    align-self: center;
+    color: #8f8f8f;
+    width: 85%;
+}
+
+/* Start of the icon section */
+.iconSection {
+    background-image: url(./assets/home4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.iconSection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.iconContainer {
+    width: 50%;
+    display: flex;
+}
+
+.iconStyles {
+    padding: 0 30px;
+}
+
+.iconStyles i {
+    font-size: 2.5rem;
+    border-radius: 50%;
+    border: 2.5px solid #333;
+    width: 60px;
+    height: 60px;
+    padding: 18px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+/* Start of the Team photo grid */
+
+.gridSection h4 {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.gridContainer {
+    display: flex;
+} 
+
+.topText {
+    height: 200px;
+}
+
+.gridContainer img {
+    width: 200px;
+    height: 200px;
+}
+
+.firstColumn {
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+}
+
+.secondColumn {
+    display: flex;
+    flex: 1 1 50%;
+    flex-wrap: wrap;
+}
