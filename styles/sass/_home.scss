@@ -1,0 +1,218 @@
+/* This is the start of the header */
+
+header {
+    height: 750px;
+    background-image: url(../assets/home1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* This is the start of the branding Section */
+
+.brandingSection {
+    background-color: $main;
+}
+
+.brandingContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brandingPhotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+/* need the parent of the circle text to be the img */
+.imageContainer img {
+    width: 400px;
+    padding: 150px 0 50px 0;
+}
+
+div .circleText {
+    background: rgba(0, 0, 0, 0);
+    width: 200px;
+    position: absolute;
+    top: -85px;
+    left: -85px;
+}
+
+.brandingParagraphs {
+    display: flex;
+    text-align: center;
+    width: 60%;
+    padding: 0 0 100px 0;
+}
+
+.brandingText,
+.designText {
+    flex: 1 1 100px;
+}
+
+/* Start of the Testimonials Section */
+
+.testimonials {
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0 100px 0;
+}
+
+.testimonials a {
+    font-size: 3rem;
+}
+
+.previous,
+.next {
+    align-self: center;
+}
+
+.slides {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.slides img {
+    border-radius: 50%;
+    align-self: center;
+    max-width: 225px;
+    margin: 0 0 50px 0;
+}
+
+.slides p {
+    text-align: center;
+    font-style: italic;
+    align-self: center;
+    color: $black;
+    color: lighten($black, 30%);
+    width: 85%;
+}
+
+/* Start of the icon section */
+.iconSection {
+    background-image: url(../assets/home4.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.iconSection {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.iconContainer {
+    width: 50%;
+    display: flex;
+}
+
+.iconStyles {
+    padding: 0 30px;
+}
+
+.iconStyles i {
+    font-size: 2.5rem;
+    border: 2.5px solid $black;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 14px 0 0 0;
+    border-radius: 50%;
+}
+
+/* Start of the Team photo grid */
+
+.gridSection h4 {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.gridContainer {
+    display: flex;
+} 
+
+.topText {
+    height: 200px;
+}
+
+.gridContainer img {
+    width: 200px;
+    height: 200px;
+}
+
+.firstColumn {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex: 1 1 50%;
+        .firstRow {
+            margin: 0 20px 20px 0;
+        }
+            .secondRow {
+                display: flex;
+                flex: 1 1 40%;
+                margin: 20px 20px 20px 0;
+                justify-content: space-between;
+            }
+}
+
+.secondColumn {
+    flex: 1 1 50%;
+        .firstRow {
+            display: flex;
+        }
+            .secondRow {
+                display: flex;
+            }
+}
+
+
+
+// Start of Contact section 
+
+aside {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box1 {
+    background-color: $main;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 50%;
+        h4 {
+            padding: 0 0 50px 0;
+        }
+            p {
+                padding: 0 0 45px 0;
+                color: lighten($black, 30);
+                width: 70%;
+            }
+}
+
+.box2 {
+    background-image: url(../assets/home10.jpeg);
+    background-repeat: no-repeat;
+    height: 700px;
+    flex: 1 1 50%;
+}
+

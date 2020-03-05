@@ -1,0 +1,27 @@
+.primaryNav {
+    display: flex;
+    height: 50px;
+}
+
+.logo {
+    text-align: center;
+    flex: 1 0 50%;
+    margin: auto;
+}
+
+.leftNav,
+.rightNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 0 25%;
+}
+
+.topMenu {
+    visibility: hidden;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 4rem;
+
+}

@@ -1,0 +1,39 @@
+footer {
+    background-color: $black;
+    color: $white;
+}
+
+.bottomFooter {
+    display: flex;
+    justify-content: space-between;
+        h3 {
+            padding: 100px 0 50px 0;
+        }
+            address {
+                line-height: 30px;
+            }
+}
+
+.primarySocialList {
+    display: flex;
+        li {
+        padding: 30px 20px 0 0;
+        }
+}
+
+.recentPosts {
+    line-height: 40px;
+        li {
+            list-style: disc;
+        }
+        
+}
+
+form {
+    legend {
+        padding: 0 0 30px 0;
+    }
+        button {
+            background: $main;
+        }
+}
