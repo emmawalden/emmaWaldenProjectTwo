@@ -1,0 +1,28 @@
+.blog header {
+    background-image: url(../assets/blog1.jpeg);
+    background-position: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+
+}
+
+.blogHeader {
+    padding-top: 100px;
+}
+
+.blogInfo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $black;
+    border-color: lighten($black, 50);
+}
+
+.blogInfo img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+// Start of the blog posts section
+.blogPosts {
+    display: flex;
+}

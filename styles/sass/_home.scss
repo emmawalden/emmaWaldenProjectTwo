@@ -137,50 +137,73 @@ div .circleText {
 }
 
 /* Start of the Team photo grid */
-
 .gridSection h4 {
     text-align: center;
-    padding: 100px 0;
+    padding: 150px 0 100px 0;
 }
 
 .gridContainer {
-    display: flex;
-} 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding-bottom: 30px;
+}
 
-.topText {
-    height: 200px;
+.one {
+    grid-column-start: span 2;
+    grid-row: 1;
+    background-color: $secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 100px 40px 40px 40px;
+}
+
+.two {
+    grid-column: 1 / 2;
+    grid-row : 2;
+}
+
+.three {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.four {
+    grid-column: 3 / 4;
+    grid-row: 1;
+}
+
+.five {
+    grid-column: 4 / 4;
+    grid-row: 1;
+}
+
+.six {
+    grid-column: 3 / 4;
+    grid-row: 2;
+}
+
+.seven {
+    grid-column: 4 / 4;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.seven h3 {
+    width: 60%;
 }
 
 .gridContainer img {
-    width: 200px;
-    height: 200px;
+    width: 350px;
 }
 
-.firstColumn {
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    flex: 1 1 50%;
-        .firstRow {
-            margin: 0 20px 20px 0;
-        }
-            .secondRow {
-                display: flex;
-                flex: 1 1 40%;
-                margin: 20px 20px 20px 0;
-                justify-content: space-between;
-            }
-}
 
-.secondColumn {
-    flex: 1 1 50%;
-        .firstRow {
-            display: flex;
-        }
-            .secondRow {
-                display: flex;
-            }
-}
 
 
 

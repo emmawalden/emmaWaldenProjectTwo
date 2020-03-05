@@ -528,70 +528,103 @@ div .circleText {
 /* Start of the Team photo grid */
 .gridSection h4 {
   text-align: center;
-  padding: 100px 0;
+  padding: 150px 0 100px 0;
 }
 
 .gridContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 300px 300px;
+      grid-template-rows: 300px 300px;
+  grid-gap: 30px;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding-bottom: 30px;
+}
+
+.one {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  background-color: #F6F6F6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 100px 40px 40px 40px;
 }
 
-.topText {
-  height: 200px;
+.two {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.three {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.four {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.five {
+  -ms-grid-column: 4;
+  grid-column: 4 / 4;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+.six {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3 / 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.seven {
+  -ms-grid-column: 4;
+  grid-column: 4 / 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.seven h3 {
+  width: 60%;
 }
 
 .gridContainer img {
-  width: 200px;
-  height: 200px;
-}
-
-.firstColumn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-}
-
-.firstColumn .firstRow {
-  margin: 0 20px 20px 0;
-}
-
-.firstColumn .secondRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
-  margin: 20px 20px 20px 0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.secondColumn {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-}
-
-.secondColumn .firstRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.secondColumn .secondRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 350px;
 }
 
 aside {
@@ -681,9 +714,49 @@ aside {
   font-size: 4rem;
 }
 
+.blog header {
+  background-image: url(../assets/blog1.jpeg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+}
+
+.blogHeader {
+  padding-top: 100px;
+}
+
+.blogInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #333;
+  border-color: #b3b3b3;
+}
+
+.blogInfo img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.blogPosts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact header {
+  background-image: url(../assets/contact1.jpeg);
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 150px;
+}
+
 footer {
   background-color: #333;
-  color: #fff;
+  color: #F6F6F6;
 }
 
 .bottomFooter {
@@ -693,10 +766,11 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 150px 0;
 }
 
 .bottomFooter h3 {
-  padding: 100px 0 50px 0;
+  padding: 0 0 50px 0;
 }
 
 .bottomFooter address {
@@ -727,4 +801,11 @@ form legend {
 
 form button {
   background: #C3DAB7;
+}
+
+.copyright h3 {
+  text-align: center;
+  padding: 100px 0;
+  border-top: 1px solid #333;
+  border-color: #999999;
 }
