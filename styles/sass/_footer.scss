@@ -7,7 +7,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 150px 0;
-        h3 {
+        h5 {
             padding: 0 0 50px 0;
         }
             address {
@@ -30,16 +30,27 @@ footer {
         
 }
 
-form {
+.subscription form {
     legend {
         padding: 0 0 30px 0;
     }
         button {
             background: $main;
+            padding: 6.5px 10px;
+            font-size: 2rem;
+            float: left;
         }
+            input[type="email"] {
+                padding: 10px 0 10px 20px;
+                width: 250px;
+                float: left;
+    }
 }
 
-.copyright h3  {
+
+
+
+.copyright h5  {
     text-align: center;
     padding: 100px 0;
     border-top: 1px solid $black;

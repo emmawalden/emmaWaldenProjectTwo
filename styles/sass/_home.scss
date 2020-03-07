@@ -4,10 +4,21 @@ header {
     height: 750px;
     background-image: url(../assets/home1.jpeg);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* This is the start of the branding Section */
+
+.verticalLine {
+    position: relative;
+}
+.vertical {
+    border-right: 1px solid $black; 
+    height: 100px;
+    position: absolute;
+    bottom: -50px;
+    right: 50%;
+    border-color: lighten($black, 35%);
+}
 
 .brandingSection {
     background-color: $main;
@@ -29,7 +40,6 @@ header {
     position: relative;
 }
 
-/* need the parent of the circle text to be the img */
 .imageContainer img {
     width: 400px;
     padding: 150px 0 50px 0;
@@ -48,6 +58,9 @@ div .circleText {
     text-align: center;
     width: 60%;
     padding: 0 0 100px 0;
+        h2 {
+            padding-bottom: 20px;
+        }
 }
 
 .brandingText,
@@ -101,25 +114,31 @@ div .circleText {
 .iconSection {
     background-image: url(../assets/home4.jpeg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 750px;
-}
-
-.iconSection {
+    height: 800px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding: 75px 150px 50px 0;
 }
 
 .sectionContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
 }
 
 .iconContainer {
     width: 50%;
     display: flex;
+    h3 {
+        padding-bottom: 20px;
+    }
+        p {
+            color: lighten($black, 30%);
+            padding-bottom: 30px;
+        }
 }
 
 .iconStyles {
@@ -137,6 +156,18 @@ div .circleText {
 }
 
 /* Start of the Team photo grid */
+.secondVerticalLine {
+    position: relative;
+}
+.secondVertical {
+    border-right: 1px solid $black; 
+    height: 70px;
+    position: absolute;
+    bottom: -70px;
+    right: 50%;
+    border-color: lighten($black, 35%);
+}
+
 .gridSection h4 {
     text-align: center;
     padding: 150px 0 100px 0;
@@ -159,6 +190,9 @@ div .circleText {
     flex-direction: column;
     justify-content: flex-end;
     padding: 100px 40px 40px 40px;
+        h3 {
+            padding-bottom: 20px;
+        }
 }
 
 .two {
@@ -227,7 +261,7 @@ aside {
         }
             p {
                 padding: 0 0 45px 0;
-                color: lighten($black, 30);
+                color: lighten($black, 30%);
                 width: 70%;
             }
 }

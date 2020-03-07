@@ -66,21 +66,21 @@
                 </div>
             </div>
         </section>
-        <article>
+        <article class="articleSection">
             <div class="wrapper">
                 <article class="intro">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus eos rem fuga nihil repudiandae sit iusto tempora illum iure placeat quis fugiat quia qui autem maxime voluptatem amet, ad facere?</p>
                 </article>
                 <article>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis numquam animi rem autem iste rerum eius quos cumque ullam deserunt quia, dignissimos ducimus commodi recusandae cupiditate, tempora, iusto voluptates.</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum fuga officia qui perspiciatis tempora! Cumque perspiciatis aliquid sapiente maiores cupiditate placeat architecto aperiam nulla at.</p>
                 </article>
                 <article>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque ullam nam officia, ipsa culpa voluptatem voluptate, voluptates vel quisquam quis eius error ratione possimus, magni saepe corporis tempore! At repellat quae sapiente, iste voluptatibus molestiae harum deleniti consequatur eaque commodi nostrum sed asperiores vel autem cumque incidunt excepturi exercitationem inventore.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim obcaecati voluptatum aut animi natus eveniet quisquam numquam. Sapiente, distinctio delectus. Autem nulla corrupti est magni ipsum temporibus explicabo totam maiores animi? Dolor sapiente velit eaque hic quidem sunt iure id rem minus incidunt soluta vitae tenetur at repellat odio excepturi nemo, consequatur aperiam voluptatum debitis exercitationem expedita, fugiat enim. Pariatur ex eum, cumque doloribus alias nostrum atque facere! Distinctio magni eos amet nesciunt delectus odio.</p>
                 </article>
                 <article>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sapiente eaque totam aspernatur, reprehenderit illum possimus a, commodi praesentium corrupti, voluptatem ducimus. Incidunt mollitia corporis ducimus praesentium enim libero minima ipsa. Temporibus facere sunt vitae consequuntur neque a? Aperiam, libero!</p>
                 </article>
-                <div class="socialList">
+                <div>
                     <ul class="socialList">
                         <li>
                             <h4>Share:</h4>
@@ -100,7 +100,7 @@
                 </div> 
             </div>
         </article>
-        <section>
+        <section class="blogSection">
             <div class="wrapper">
                 <h3>Related Posts</h3>
                 <ul class="blogPosts">
@@ -119,43 +119,51 @@
                 </ul>
             </div>
         </section>
-        <section>
-            <h3>02 Comments</h3>
-            <div class="commentContainer">
-                <div class="commentBox">
-                    <div class="commentBody">
-                        <div class="message">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate fugiat sint quod tempora nesciunt!</span>
+        <section class="commentSection">
+            <div class="wrapper">
+                <h3>02 Comments</h3>
+                <div class="commentContainer">
+                    <div class="commentBox">
+                        <div class="commentBody">
+                            <div class="message">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate fugiat sint quod tempora nesciunt!</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="commentBox">
-                    <div class="commentBody">
-                        <div class="message">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quo cupiditate adipisci ad porro nostrum!</span>
+                    <div class="commentBox">
+                        <div class="commentBody">
+                            <div class="message">
+                                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quo cupiditate adipisci ad porro nostrum!</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="commentForm">
-            <h3>Leave a Comment</h3>
-            <form action="Comment">
-                <label class="visuallyHidden" for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name...">
-                <label class="visuallyHidden" for="email">Email</label>
-                <input type="email" id="email" placeholder="youremail@domain.com">
-                <label class="visuallyHidden" for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="Subject (Optional)">
-                <label class="visuallyHidden" for="comment">Comment</label>
-                <input type="text" id="comment" placeholder="Here goes your comment">
-                <button type="submit" class="submit" aria-label="submit">Submit Comment</button>
-            </form>
+            <div class="wrapper">
+                <h3>Leave a Comment</h3>
+                <form action="comment">
+                    <div class="firstRow">
+                        <label class="visuallyHidden" for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name...">
+                        <label class="visuallyHidden" for="email">Email</label>
+                        <input type="email" id="email" placeholder="youremail@domain.com">
+                        <label class="visuallyHidden" for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject (Optional)">
+                    </div>
+                    <div class="secondRow">
+                        <label class="visuallyHidden" for="comment">Comment</label>
+                        <input type="text" id="comment" placeholder="Here goes your comment">
+                        <button type="submit" class="submit" aria-label="submit">Submit Comment</button>
+                    </div>
+                </form>
+            </div>
         </section>
         <footer>
             <div class="wrapper bottomFooter">
                 <div class="contactUs">
-                    <h3>Contact Us</h3>
+                    <h5>Contact Us</h5>
                     <address>
                         6591 Orchard Street, Toronto, Ontario<br>
                         Email: contact@creative.com<br>
@@ -178,7 +186,7 @@
                     </ul>
                 </div>
                 <div class="recentPosts">
-                    <h3>Recent Posts</h3>
+                    <h5>Recent Posts</h5>
                     <ul>
                         <li>
                             <p>Conversion hackathon partner</p>
@@ -198,7 +206,7 @@
                     </ul>
                 </div>
                 <div class="subscription">
-                    <h3>Subscribe Now</h3>
+                    <h5>Subscribe Now</h5>
                     <form action="">
                         <legend>Signup for emails and notifications below.</legend>
                         <label for="email" class="visuallyHidden">Enter your email</label>
@@ -209,7 +217,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <h3>Creative Agency</h3>
+                <h5>Creative Agency</h5>
             </div>
         </footer>
     </main>

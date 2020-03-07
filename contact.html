@@ -34,55 +34,66 @@
     </header>
 <!-- This is the start of the main -->
     <main>
-        <section>
-            <h1>Contact Us</h1>
-            <h3>Contact Details</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit quod adipisci nostrum mollitia quidem quo voluptatem molestias. Rem sed voluptatum fugit optio, quia debitis.</p>
+        <section class="topContact">
+            <div class="wrapper">
+                <h1>Contact Us</h1>
+                <h3>Contact Details</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit quod adipisci nostrum mollitia quidem quo voluptatem molestias. Rem sed voluptatum fugit optio, quia debitis.</p>
+            </div>
         </section>
         <section>
-            <ul class="iconList">
-                <li>
-                    <i class="fas fa-mobile-alt" aria-hidden="true"></i>
-                    <h4>Phone</h4>
-                    <p>
-                        Phone 01: 123 456 7890<br>
-                        Phone 02: 345 678 9101
-                    </p>
-                </li>
-                <li>
-                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-                    <h4>Address</h4>
-                    <address>6591 Orchard Street, Toronto, Ontario</address>
-                </li>
-                <li>
-                    <i class="fas fa-envelope" aria-hidden="true"></i>
-                    <h4>Email</h4>
-                    <p>
-                    contact@creative.com<br>
-                    info@creative.com
-                    </p>
-                </li>
-            </ul>
+            <div class="wrapper">
+                <ul class="iconList">
+                    <li>
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                        <h4>Phone</h4>
+                        <p>
+                            Phone 01: 123 456 7890<br>
+                            Phone 02: 345 678 9101
+                        </p>
+                    </li>
+                    <li class="address">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                        <h4>Address</h4>
+                        <address>6591 Orchard Street, Toronto, Ontario</address>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                        <h4>Email</h4>
+                        <p>
+                        contact@creative.com<br>
+                        info@creative.com
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="contactForm">
-            <h3>Get in Touch with Us</h3>
-            <p>If you have any questions. Please don't hesitate to send us a message</p>
-            <form action="Comment">
-                <label class="visuallyHidden" for="name">Name</label>
-                <input type="text" id="name" placeholder="Enter your name...">
-                <label class="visuallyHidden" for="email">Email</label>
-                <input type="email" id="email" placeholder="youremail@domain.com">
-                <label class="visuallyHidden" for="subject">Subject</label>
-                <input type="text" id="subject" placeholder="Subject (Optional)">
-                <label class="visuallyHidden" for="comment">Comment</label>
-                <input type="text" id="comment" placeholder="Here goes your comment">
-                <button type="submit" class="submit" aria-label="submit">Send Message</button>
-            </form>
+            <div class="wrapper">
+                <h3>Get in Touch with Us</h3>
+                <p>If you have any questions. Please don't hesitate to send us a message</p>
+                <form action="Comment">
+                    <div class="firstRow">
+                        <label class="visuallyHidden" for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name...">
+                        <label class="visuallyHidden" for="email">Email</label>
+                        <input type="email" id="email" placeholder="youremail@domain.com">
+                        <label class="visuallyHidden" for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Subject (Optional)">
+                    </div>
+                    <div class="secondRow">
+                        <label class="visuallyHidden" for="comment">Comment</label>
+                        <input type="text" id="comment" placeholder="Here goes your comment">
+                        <button type="submit" class="submit" aria-label="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
         </section>
+        <aside class="contentContainer"></aside>
         <footer>
             <div class="wrapper bottomFooter">
                 <div class="contactUs">
-                    <h3>Contact Us</h3>
+                    <h5>Contact Us</h5>
                     <address>
                         6591 Orchard Street, Toronto, Ontario<br>
                         Email: contact@creative.com<br>
@@ -105,7 +116,7 @@
                     </ul>
                 </div>
                 <div class="recentPosts">
-                    <h3>Recent Posts</h3>
+                    <h5>Recent Posts</h5>
                     <ul>
                         <li>
                             <p>Conversion hackathon partner</p>
@@ -125,8 +136,8 @@
                     </ul>
                 </div>
                 <div class="subscription">
-                    <h3>Subscribe Now</h3>
-                    <form action="">
+                    <h5>Subscribe Now</h5>
+                    <form class="clearfix" action="">
                         <legend>Signup for emails and notifications below.</legend>
                         <label for="email" class="visuallyHidden">Enter your email</label>
                         <input id="email" type="email" placeholder="Enter your email">
@@ -136,11 +147,9 @@
                 </div>
             </div>
             <div class="copyright">
-                <h3>Creative Agency</h3>
+                <h5>Creative Agency</h5>
             </div>
         </footer>
-    </main><div class="copyright">
-                <h3>Creative Agency</h3>
-            </div>
+    </main>
 </body>
 </html>

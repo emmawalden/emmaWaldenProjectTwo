@@ -288,6 +288,41 @@ button {
   letter-spacing: 0.9px;
 }
 
+.blog h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.contact h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
+.index h2,
+h5 {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.9px;
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.blog h2,
+.contact h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 3.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.9px;
+}
+
 .index h3,
 .contact h4,
 .blog h4 {
@@ -306,22 +341,6 @@ button {
   line-height: 24px;
   font-size: 2.5rem;
   text-transform: uppercase;
-}
-
-.blog h1,
-.contact h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.9px;
-}
-
-.blog h2,
-.contact h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 3.7rem;
 }
 
 .blog h3 {
@@ -349,10 +368,22 @@ header {
   height: 750px;
   background-image: url(../assets/home1.jpeg);
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 /* This is the start of the branding Section */
+.verticalLine {
+  position: relative;
+}
+
+.vertical {
+  border-right: 1px solid #333;
+  height: 100px;
+  position: absolute;
+  bottom: -50px;
+  right: 50%;
+  border-color: #8c8c8c;
+}
+
 .brandingSection {
   background-color: #C3DAB7;
 }
@@ -386,7 +417,6 @@ header {
   position: relative;
 }
 
-/* need the parent of the circle text to be the img */
 .imageContainer img {
   width: 400px;
   padding: 150px 0 50px 0;
@@ -407,6 +437,10 @@ div .circleText {
   text-align: center;
   width: 60%;
   padding: 0 0 100px 0;
+}
+
+.brandingParagraphs h2 {
+  padding-bottom: 20px;
 }
 
 .brandingText,
@@ -479,11 +513,9 @@ div .circleText {
 .iconSection {
   background-image: url(../assets/home4.jpeg);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 750px;
-}
-
-.iconSection {
+  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,6 +525,7 @@ div .circleText {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 75px 150px 50px 0;
 }
 
 .sectionContainer {
@@ -501,7 +534,7 @@ div .circleText {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 50%;
+  width: 60%;
 }
 
 .iconContainer {
@@ -509,6 +542,15 @@ div .circleText {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.iconContainer h3 {
+  padding-bottom: 20px;
+}
+
+.iconContainer p {
+  color: gray;
+  padding-bottom: 30px;
 }
 
 .iconStyles {
@@ -526,6 +568,19 @@ div .circleText {
 }
 
 /* Start of the Team photo grid */
+.secondVerticalLine {
+  position: relative;
+}
+
+.secondVertical {
+  border-right: 1px solid #333;
+  height: 70px;
+  position: absolute;
+  bottom: -70px;
+  right: 50%;
+  border-color: #8c8c8c;
+}
+
 .gridSection h4 {
   text-align: center;
   padding: 150px 0 100px 0;
@@ -561,6 +616,10 @@ div .circleText {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 100px 40px 40px 40px;
+}
+
+.one h3 {
+  padding-bottom: 20px;
 }
 
 .two {
@@ -716,13 +775,27 @@ aside {
 
 .blog header {
   background-image: url(../assets/blog1.jpeg);
-  background-position: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 750px;
 }
 
 .blogHeader {
   padding-top: 100px;
+}
+
+.blogHeader h1 {
+  padding-bottom: 20px;
+}
+
+.blogHeader p {
+  padding-bottom: 75px;
+}
+
+.blogHeader span,
+.blogInfo p,
+.blogInfo time {
+  color: #999999;
 }
 
 .blogInfo {
@@ -737,21 +810,188 @@ aside {
 }
 
 .blogInfo img {
-  width: 100px;
+  width: 75px;
   border-radius: 50%;
+}
+
+.articleSection {
+  padding: 75px 0;
+}
+
+.articleSection .intro p {
+  font-weight: bold;
+  color: black;
+  padding-bottom: 30px;
+}
+
+.articleSection p {
+  color: #999999;
+  padding-bottom: 30px;
+}
+
+.socialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 15%;
+}
+
+.socialList li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20px;
+          flex: 1 1 20px;
+}
+
+.socialList a {
+  padding-left: 10px;
+}
+
+.blogSection h3 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+  border-color: #b3b3b3;
 }
 
 .blogPosts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 50px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blogPosts img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  padding-bottom: 20px;
+}
+
+.commentSection h3 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+  border-color: #b3b3b3;
+}
+
+.commentForm {
+  padding: 150px 0 250px 0;
+}
+
+.commentForm h3 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+  border-color: #b3b3b3;
+}
+
+form input {
+  border: none;
+  border-bottom: 1px solid #333;
+  border-color: #b3b3b3;
+}
+
+.firstRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.firstRow input {
+  width: calc(100%/3 - 20px);
+  padding: 40px 0 10px 0;
+}
+
+.secondRow input[id="comment"] {
+  display: block;
+  width: 100%;
+  padding: 30px 0 200px 0;
+  border-bottom: 1px solid #333;
+  border-color: #b3b3b3;
+}
+
+.secondRow button {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #333;
+  margin-top: 50px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .contact header {
+  background-color: #fff;
+  background-image: none;
+  margin: 40px 0 0 0;
+  height: 100px;
+}
+
+.topContact {
   background-image: url(../assets/contact1.jpeg);
-  background-position: cover;
   background-repeat: no-repeat;
-  height: 150px;
+  background-size: cover;
+}
+
+.topContact h1 {
+  padding: 100px 0 50px 0;
+}
+
+.topContact h3 {
+  padding-bottom: 30px;
+}
+
+.topContact h1::before {
+  content: '';
+  display: block;
+  border-top: 4px solid #333;
+  width: 3%;
+  padding-top: 50px;
+}
+
+.iconList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  padding: 100px 50px;
+}
+
+.iconList i {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.iconList .address {
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-color: #b3b3b3;
+  padding: 0 50px;
+}
+
+.contactForm {
+  padding: 150px 0 250px 0;
+}
+
+.contactForm h3 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+  border-color: #b3b3b3;
+}
+
+.contentContainer {
+  background-image: url(../assets/contact2.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: block;
 }
 
 footer {
@@ -769,7 +1009,7 @@ footer {
   padding: 150px 0;
 }
 
-.bottomFooter h3 {
+.bottomFooter h5 {
   padding: 0 0 50px 0;
 }
 
@@ -795,15 +1035,24 @@ footer {
   list-style: disc;
 }
 
-form legend {
+.subscription form legend {
   padding: 0 0 30px 0;
 }
 
-form button {
+.subscription form button {
   background: #C3DAB7;
+  padding: 6.5px 10px;
+  font-size: 2rem;
+  float: left;
 }
 
-.copyright h3 {
+.subscription form input[type="email"] {
+  padding: 10px 0 10px 20px;
+  width: 250px;
+  float: left;
+}
+
+.copyright h5 {
   text-align: center;
   padding: 100px 0;
   border-top: 1px solid #333;

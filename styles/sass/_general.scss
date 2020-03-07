@@ -58,9 +58,44 @@ button {
     letter-spacing: 0.7px;
 }
 
-// INDEX STYLES
+// STYLES
 
 .index h1 {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+}
+
+.blog h1 {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+}
+
+.contact h1 {
+    font-family: $mainFont;
+    font-weight: 700;
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+}
+
+.index h2,
+h5 {
+    font-family: $mainFont;
+    letter-spacing: 0.9px;
+    line-height: 24px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+.blog h2,
+.contact h2 {
     font-family: $mainFont;
     font-weight: 700;
     font-size: 3.7rem;
@@ -88,22 +123,6 @@ button {
     font-size: 2.5rem;
     text-transform: uppercase;
 
-}
-
-.blog h1,
-.contact h1 {
-    font-family: $mainFont;
-    font-weight: 700;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.9px;
-}
-
-.blog h2,
-.contact h2 {
-    font-family: $mainFont;
-    font-weight: 700;
-    font-size: 3.7rem;
 }
 
 .blog h3 {

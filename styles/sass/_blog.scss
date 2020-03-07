@@ -1,6 +1,6 @@
 .blog header {
     background-image: url(../assets/blog1.jpeg);
-    background-position: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 750px;
 
@@ -8,21 +8,130 @@
 
 .blogHeader {
     padding-top: 100px;
+    h1 {
+        padding-bottom: 20px;
+    }
+        p {
+            padding-bottom: 75px;
+        }
+}
+
+.blogHeader span,
+.blogInfo p,
+.blogInfo time {
+    color: lighten($black, 40%);
 }
 
 .blogInfo {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid $black;
-    border-color: lighten($black, 50);
+    border-color: lighten($black, 50%);
 }
 
 .blogInfo img {
-    width: 100px;
+    width: 75px;
     border-radius: 50%;
 }
 
+// Start of the article 
+
+.articleSection {
+    padding: 75px 0;
+        .intro p {
+            font-weight: bold;
+            color: darken($black, 50%);
+            padding-bottom: 30px;
+        } 
+            p:not(.intro p) {
+                color: lighten($black, 40%);
+                padding-bottom: 30px;
+            }
+}
+
+.socialList {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+        li {
+            flex: 1 1 20px;
+        }
+            a {
+                padding-left: 10px;
+            }
+}
+
+
 // Start of the blog posts section
+
+.blogSection {
+    h3 {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $black;
+        border-color: lighten($black, 50%);
+    }
+}
 .blogPosts {
     display: flex;
+    padding: 50px 0;
+    justify-content: space-between;
+        img {
+            flex: 1 1 30%;
+            padding-bottom: 20px;
+        }
 }
+
+// Start of the comments section
+
+.commentSection {
+    h3  {
+        padding-bottom: 30px;
+        border-bottom: 1px solid $black;
+        border-color: lighten($black, 50%);
+    }
+}
+
+// Start of the comment form
+
+.commentForm {
+    padding: 150px 0 250px 0;
+        h3 {
+            padding-bottom: 30px;
+            border-bottom: 1px solid $black;
+            border-color: lighten($black, 50%);
+        }
+}
+
+form input {
+    border: none;
+    border-bottom: 1px solid $black;
+    border-color: lighten($black, 50%);
+}
+
+.firstRow {
+    display: flex;
+    justify-content: space-between;
+        input {
+            width: calc(100%/3 - 20px);
+            padding: 40px 0 10px 0;
+        }
+}
+
+.secondRow input[id="comment"] {
+    display: block;
+    width: 100%;
+    padding: 30px 0 200px 0;
+    border-bottom: 1px solid $black;
+    border-color: lighten($black, 50%);
+}
+
+.secondRow button {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $black;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
