@@ -334,10 +334,10 @@ h5 {
   text-transform: uppercase;
 }
 
-.index h4,
-.contact h3 {
+.index h4 {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.9px;
+  letter-spacing: 1.8px;
+  font-weight: 400;
   line-height: 24px;
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -349,6 +349,15 @@ h5 {
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.9px;
+}
+
+.contact h3 {
+  font-family: #F6F6F6;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
 }
 
 .portfolioLink {
@@ -878,6 +887,69 @@ aside {
   border-color: #b3b3b3;
 }
 
+.commentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.commentContainer img {
+  width: 60px;
+  height: 60px;
+  margin: 40px 30px 0 0;
+}
+
+.commentBox .commentBody {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 40px 10px 0 10px;
+  padding: 5px;
+  background-color: #F6F6F6;
+  border-radius: 3px;
+  border: 5px solid #F6F6F6;
+}
+
+.commentBody .message {
+  min-height: 30px;
+  border-radius: 3px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.message h4,
+span,
+time {
+  padding-bottom: 10px;
+}
+
+.tip {
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  background: transparent;
+  border: 10px solid #F6F6F6;
+}
+
+.tipLeft {
+  top: 10px;
+  left: -25px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
 .commentForm {
   padding: 150px 0 250px 0;
 }
@@ -932,26 +1004,39 @@ form input {
   height: 100px;
 }
 
-.topContact {
+.topHeader {
   background-image: url(../assets/contact1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 200px;
 }
 
-.topContact h1 {
-  padding: 100px 0 50px 0;
+.topHeader h1 {
+  padding: 75px 0 50px 0;
+  width: 20%;
+  position: relative;
 }
 
-.topContact h3 {
-  padding-bottom: 30px;
+.topHeader span {
+  position: absolute;
+  bottom: -20px;
 }
 
-.topContact h1::before {
+.topHeader h1::before {
   content: '';
   display: block;
   border-top: 4px solid #333;
-  width: 3%;
+  width: 15%;
   padding-top: 50px;
+}
+
+.secondContactSection h3 {
+  padding: 150px 0 30px 0;
+}
+
+.secondContactSection p {
+  width: 50%;
+  color: #999999;
 }
 
 .iconList {
@@ -960,8 +1045,8 @@ form input {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 80%;
-  padding: 100px 50px;
+  width: 90%;
+  padding: 100px 0 50px 0;
 }
 
 .iconList i {
@@ -976,21 +1061,60 @@ form input {
   padding: 0 50px;
 }
 
+.iconList p,
+address {
+  color: #999999;
+}
+
 .contactForm {
-  padding: 150px 0 250px 0;
+  padding: 50px 0 250px 0;
 }
 
 .contactForm h3 {
   padding-bottom: 30px;
+}
+
+.contactForm p {
+  padding-bottom: 100px;
+  color: #999999;
+}
+
+.firstRow input[type="email"]::-webkit-input-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.firstRow input[type="email"]:-ms-input-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.firstRow input[type="email"]::-ms-input-placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.firstRow input[type="email"]::placeholder {
+  color: #333;
+  opacity: 1;
+}
+
+.firstRow input[type="email"] {
   border-bottom: 1px solid #333;
-  border-color: #b3b3b3;
+}
+
+.secondRow button[type="submit"] {
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 15px;
 }
 
 .contentContainer {
   background-image: url(../assets/contact2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 550px;
   display: block;
 }
 
@@ -999,7 +1123,7 @@ footer {
   color: #F6F6F6;
 }
 
-.bottomFooter {
+.footerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1009,11 +1133,11 @@ footer {
   padding: 150px 0;
 }
 
-.bottomFooter h5 {
+.footerContainer h5 {
   padding: 0 0 50px 0;
 }
 
-.bottomFooter address {
+.footerContainer address {
   line-height: 30px;
 }
 
@@ -1027,29 +1151,55 @@ footer {
   padding: 30px 20px 0 0;
 }
 
-.recentPosts {
+.secondFooterColumn {
   line-height: 40px;
 }
 
-.recentPosts li {
+.secondFooterColumn h5 {
+  text-align: center;
+}
+
+.secondFooterColumn li {
   list-style: disc;
 }
 
-.subscription form legend {
+.thirdFooterColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.thirdFooterColumn h5 {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+legend {
   padding: 0 0 30px 0;
 }
 
-.subscription form button {
+.submitContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.submitContainer input[type="email"] {
+  padding: 10px 0 10px 20px;
+  width: 250px;
+}
+
+button[type="submit"] {
   background: #C3DAB7;
   padding: 6.5px 10px;
   font-size: 2rem;
-  float: left;
-}
-
-.subscription form input[type="email"] {
-  padding: 10px 0 10px 20px;
-  width: 250px;
-  float: left;
 }
 
 .copyright h5 {

@@ -91,6 +91,64 @@
     }
 }
 
+.commentContainer {
+    display: flex;
+}
+
+.commentContainer img {
+    width: 60px;
+    height: 60px;
+    margin: 40px 30px 0 0;
+}
+
+.commentBox .commentBody {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 40px 10px 0 10px;
+    padding: 5px;
+    background-color: $secondary;
+    border-radius: 3px;
+    border: 5px solid $secondary;
+}
+
+.commentBody .message {
+    min-height: 30px;
+    border-radius: 3px;
+    line-height: 1.5;
+    color: $black;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+        
+
+}
+
+.message h4,
+span,
+time {
+    padding-bottom: 10px;
+}
+
+.tip {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    background: transparent;
+    border: 10px solid $secondary;  
+}
+
+.tipLeft {
+    top: 10px;
+    left: -25px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: transparent;  
+}
+
 // Start of the comment form
 
 .commentForm {

@@ -34,11 +34,15 @@
     </header>
 <!-- This is the start of the main -->
     <main>
-        <section class="topContact">
+        <section class="topHeader">
             <div class="wrapper">
-                <h1>Contact Us</h1>
+                <h1>Contact <span>Us</span></h1>
+            </div>
+        </section>
+        <section>
+            <div class="wrapper secondContactSection">
                 <h3>Contact Details</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit quod adipisci nostrum mollitia quidem quo voluptatem molestias. Rem sed voluptatum fugit optio, quia debitis.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere quas facilis eos voluptatem sunt ratione ex aliquid pariatur. Ut, magnam!</p>
             </div>
         </section>
         <section>
@@ -91,8 +95,8 @@
         </section>
         <aside class="contentContainer"></aside>
         <footer>
-            <div class="wrapper bottomFooter">
-                <div class="contactUs">
+            <div class="wrapper footerContainer">
+                <div class="firstFooterColumn">
                     <h5>Contact Us</h5>
                     <address>
                         6591 Orchard Street, Toronto, Ontario<br>
@@ -115,7 +119,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="recentPosts">
+                <div class="secondFooterColumn">
                     <h5>Recent Posts</h5>
                     <ul>
                         <li>
@@ -135,14 +139,16 @@
                         </li>
                     </ul>
                 </div>
-                <div class="subscription">
+                <div class="thirdFooterColumn">
                     <h5>Subscribe Now</h5>
-                    <form class="clearfix" action="">
+                    <form action="">
                         <legend>Signup for emails and notifications below.</legend>
                         <label for="email" class="visuallyHidden">Enter your email</label>
-                        <input id="email" type="email" placeholder="Enter your email">
-                        <button type="submit" class="submit" aria-label="submit"><i
-                        class="fas fa-long-arrow-alt-right"></i></button>
+                        <div class="submitContainer">
+                            <input id="email" type="email" placeholder="Enter your email">
+                            <button type="submit" class="submit" aria-label="submit"><i
+                                    class="fas fa-long-arrow-alt-right"></i></button>
+                        </div>
                     </form>
                 </div>
             </div>
