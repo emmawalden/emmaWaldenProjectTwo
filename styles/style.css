@@ -801,26 +801,45 @@ aside {
   padding-bottom: 75px;
 }
 
-.blogHeader span,
-.blogInfo p,
-.blogInfo time {
-  color: #999999;
+.blogInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #333;
+  border-color: #b3b3b3;
 }
 
-.blogInfo {
+.firstItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 30%;
+          flex: 2 1 30%;
+}
+
+.secondaryItems {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-bottom: 1px solid #333;
-  border-color: #b3b3b3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 
 .blogInfo img {
   width: 75px;
   border-radius: 50%;
+  margin-right: 30px;
+}
+
+.blogHeader span,
+.blogInfo p,
+.blogInfo time {
+  color: #999999;
 }
 
 .articleSection {
@@ -893,6 +912,10 @@ aside {
   display: flex;
 }
 
+.commentBox {
+  width: 100%;
+}
+
 .commentContainer img {
   width: 60px;
   height: 60px;
@@ -903,16 +926,14 @@ aside {
   position: relative;
   width: 100%;
   height: auto;
-  margin: 40px 10px 0 10px;
+  margin: 40px 10px 0 0;
   padding: 5px;
   background-color: #F6F6F6;
-  border-radius: 3px;
   border: 5px solid #F6F6F6;
 }
 
 .commentBody .message {
   min-height: 30px;
-  border-radius: 3px;
   line-height: 1.5;
   color: #333;
 }
@@ -930,8 +951,23 @@ aside {
 
 .message h4,
 span,
+p,
 time {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.message span {
+  text-transform: none;
+  color: #C3DAB7;
+  color: #598243;
+}
+
+.message p {
+  color: #666666;
+}
+
+.message time {
+  color: #999999;
 }
 
 .tip {
