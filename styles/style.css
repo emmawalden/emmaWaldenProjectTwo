@@ -1271,6 +1271,9 @@ form input {
 }
 
 @media (max-width: 650px) {
+  .blog h2 {
+    font-size: 2.5rem;
+  }
   .blog header {
     height: 260px;
   }
@@ -1309,9 +1312,6 @@ form input {
 @media (max-width: 415px) {
   .blog header {
     height: 200px;
-  }
-  .blog h2 {
-    font-size: 2.5rem;
   }
   .blog h1 {
     font-size: 3rem;
@@ -1441,8 +1441,90 @@ form input {
   background-image: url(../assets/contact2.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   height: 550px;
   display: block;
+}
+
+@media (max-width: 1080px) {
+  .topHeader {
+    height: 100px;
+  }
+}
+
+@media (max-width: 950px) {
+  .contact h1 {
+    font-size: 3.5rem;
+  }
+  .topHeader h1 {
+    padding: 0 0 50px 0;
+  }
+  .topHeader span {
+    bottom: 0;
+  }
+  .topHeader h1::before {
+    padding-top: 50px;
+  }
+  .secondContactSection h3 {
+    padding: 75px 0 10px 0;
+  }
+  .iconList {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0 0 0;
+  }
+  .iconList i {
+    padding-bottom: 20px;
+  }
+  .iconList .address {
+    border: none;
+    padding: 0 0 20px 0;
+  }
+  .address address {
+    width: 50%;
+  }
+  .contentContainer {
+    height: 400px;
+  }
+}
+
+@media (max-width: 650px) {
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+  .contact header {
+    height: 50px;
+    margin: auto 0;
+  }
+  .topMenu {
+    font-size: 2rem;
+    top: 15px;
+  }
+  .contactForm {
+    padding: 50px 0 50px 0;
+  }
+  .contactForm p {
+    padding-bottom: 0;
+  }
+  .contentContainer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .topMenu {
+    top: 10px;
+    left: 10px;
+  }
+  .secondContactSection {
+    text-align: center;
+  }
+  .secondContactSection p {
+    width: 100%;
+  }
 }
 
 footer {

@@ -223,6 +223,7 @@ form input {
 
 }
 
+// Start of blog page media queries
 @media (max-width: 1335px) {
     .blogPosts {
         img {
@@ -288,6 +289,10 @@ form input {
 }
 
 @media (max-width: 650px) {
+    .blog h2 {
+        font-size: 2.5rem;
+    }
+    
     .blog header {
         height: 260px;
     }
@@ -337,10 +342,6 @@ form input {
 @media (max-width: 415px) {
     .blog header {
         height: 200px;
-    }
-
-    .blog h2 {
-        font-size: 2.5rem;
     }
 
     .blog h1 {
