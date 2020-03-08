@@ -43,13 +43,13 @@ header {
 }
 
 .imageContainer img {
-    width: 400px;
+    max-width: 400px;
     padding: 150px 0 50px 0;
 }
 
 div .circleText {
     background: rgba(0, 0, 0, 0);
-    width: 200px;
+    max-width: 200px;
     position: absolute;
     top: -85px;
     left: -85px;
@@ -76,7 +76,7 @@ div .circleText {
     background-color: $white;
     display: flex;
     justify-content: center;
-    padding: 100px 0 100px 0;
+    padding: 100px 0;
         a {
             font-size: 3rem;
         }
@@ -288,6 +288,10 @@ aside {
             }
     }
 
+    .slides {
+        width: 100%;
+    }
+
     .iconSection {
         padding: 25px 25px 0 0;
     }
@@ -311,27 +315,73 @@ aside {
 }
 
 @media (max-width: 950px) {
-// Moving icons to bottom
-    .testimonials {
-        flex-direction: column;
-        align-items: center;
-            .previous {
-                order: 4;
-            }
+    .index h2 {
+        font-size: 1.6rem;
     }
 
     .sectionContainer {
         width: 100%
     }
+
+    .vertical {
+        height: 50px;
+        bottom: -25px;
+    }
+
+    .imageContainer img {
+        width: 300px;
+        padding: 60px 0 25px 0;
+    }
+
+    div .circleText {
+        width: 100px;
+        left: -40px;
+        top: -40px;
+    }
+
+    .brandingParagraphs {
+        width: 90%;
+        padding: 0 0 25px 0;
+    }
 }
 
 @media (max-width: 850px) {
+
+    .testimonials {
+        padding: 25px 0;
+        a {
+            font-size: 2rem;
+        }
+    }
 // Changing icons to be one column
-    
+
+    .iconSection {
+        padding: 0;
+    }
+
     .sectionContainer {
         flex-direction: column;
         align-items: center;
-        padding: 50px 0 0 0;
+        padding: 20px 0 0 0;
+        max-width: 100%;
+    }
+
+    
+    .iconContainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+            h3 {
+                font-size: 1.6rem;
+            }
+                p {
+                    padding-bottom: 0;
+                }
+
+    }
+
+    .iconStyles {
+        padding: 10px 0;
     }
 }
 
@@ -346,11 +396,44 @@ aside {
         top: 15px;
     }
 
-    
+    .testimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .previous {
+        padding-bottom: 15px;
+        order: 4;
+    }
+
+    .slides {
+    img {
+            width: 150px;
+        }
+    }
+
+    .iconContainer {
+        width: 100%;
+    }
 }
 
 @media (max-width: 350px) {
     header {
         height: 500px;
+    }
+
+    .imageContainer img {
+        width: 200px;
+    }
+
+    div .circleText {
+        width: 50px;
+        left: -15px;
+        top: -18px;
+    }
+
+    .box1,
+    .box2 {
+        max-height: 400px;
     }
 }

@@ -83,11 +83,8 @@ button[type="submit"] {
     .secondFooterColumn {
         line-height: 20px;
         margin-right: 10px;
-        text-align: center;
-            li{
-                list-style: none;
-            }
     }
+
     .copyright h5 {
         padding: 50px 0;
     }
@@ -127,7 +124,7 @@ button[type="submit"] {
     }
 
     .firstFooterColumn address {
-    margin-right: 0;
+    margin-right: 25px;
     }
 
     .primarySocialList {
@@ -141,6 +138,24 @@ button[type="submit"] {
 @media (max-width: 350px) {
     .copyright h5 {
         padding: 25px 0;
+    }
+
+    .firstFooterColumn {
+        text-align: center;
+            address {
+                margin: 0;
+            }
+    }
+
+    .primarySocialList {
+        justify-content: center;
+    }
+
+    .secondFooterColumn {
+        text-align: center;
+            li{
+                list-style: none;
+            }
     }
 
     

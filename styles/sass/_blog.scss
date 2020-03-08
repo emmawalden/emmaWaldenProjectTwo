@@ -1,8 +1,9 @@
 .blog header {
     background-image: url(../assets/blog1.jpeg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 750px;
+    height: 600px;
 
 }
 
@@ -10,6 +11,7 @@
     padding-top: 100px;
     h1 {
         padding-bottom: 20px;
+        line-height: 40px;
     }
         p {
             padding-bottom: 75px;
@@ -18,6 +20,7 @@
 
 .blogInfo {
     display: flex;
+    flex-wrap: wrap;
     border-bottom: 1px solid $black;
     border-color: lighten($black, 50%);
 }
@@ -49,14 +52,15 @@
 
 .articleSection {
     padding: 75px 0;
+        p {
+            padding-bottom: 30px;
+        }
         .intro p {
             font-weight: bold;
             color: darken($black, 50%);
-            padding-bottom: 30px;
         } 
             p:not(.intro p) {
                 color: lighten($black, 40%);
-                padding-bottom: 30px;
             }
 }
 
@@ -87,8 +91,8 @@
     padding: 50px 0;
     justify-content: space-between;
         img {
-            flex: 1 1 30%;
             padding-bottom: 20px;
+            max-width: 375px;
         }
 }
 
@@ -217,5 +221,134 @@ form input {
     padding-bottom: 10px;
     text-transform: uppercase;
 
+}
+
+@media (max-width: 1335px) {
+    .blogPosts {
+        img {
+            max-width: 300px;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .blog header {
+        height: 500px;
+    }
+
+    .blogPosts {
+        flex-direction: column;
+        align-items: center;
+            img {
+                padding-bottom: 10px;
+            }
+                time {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+    }
+
+// Centering heading text 
+    .blogHeader {
+        padding-top: 50px;
+        h1 {
+            text-align: center;
+        }
+            p {
+                padding-bottom: 50px;
+                text-align: center;
+            }
+    }
+
+// Stacking the admin photo & blog details
+    .firstItem {
+        flex: 1 1 100%;
+    }
+
+// Reducing padding on blog content
+    .articleSection {
+        padding: 25px 0;
+        p { 
+            padding-bottom: 10px
+        }
+    }
+
+// Stacking form fields
+
+    .commentForm {
+        padding: 50px 0 50px 0;
+    }
+    .firstRow {
+        flex-direction: column;
+        align-items: flex-start;
+            input {
+                width: 90%;
+            }
+    }
+}
+
+@media (max-width: 650px) {
+    .blog header {
+        height: 260px;
+    }
+
+    .blogHeader {
+        h1 {
+            text-align: left;
+        }
+            p {
+                text-align: left
+            }
+    }
+
+    .secondaryItems {
+            li {
+                padding-right: 25px;
+            }
+    }
+
+    .commentContainer {
+        flex-direction: column;
+            img {
+                width: 80px;
+                height: 80px;
+                margin: 20px 0 0 0;
+            }
+    }
+
+    .commentBox .commentBody {
+        margin: 20px 0 0 0;
+    }
+
+    .firstRow {
+            input {
+                width: 100%;
+            }
+    }
+
+    .secondRow button {
+    margin-top: 10px;
+    width: 100%;
+
+}
+}
+
+
+@media (max-width: 415px) {
+    .blog header {
+        height: 200px;
+    }
+
+    .blog h2 {
+        font-size: 2.5rem;
+    }
+
+    .blog h1 {
+        font-size: 3rem;
+    }
+
+    .blogPosts {
+        padding: 20px 0;
+    }
 }
 
