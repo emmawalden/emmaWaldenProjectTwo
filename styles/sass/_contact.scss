@@ -64,8 +64,11 @@
             }
 }
 
-.iconList p,
-address {
+.iconList p {
+    color: lighten($black, 40%);
+}
+
+.address address {
     color: lighten($black, 40%);
 }
 

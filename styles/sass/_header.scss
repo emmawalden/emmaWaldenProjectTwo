@@ -20,8 +20,22 @@
 .topMenu {
     visibility: hidden;
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 8px;
+    left: 40px;
     font-size: 4rem;
+
+}
+
+@media (max-width: 1180px) {
+// Changing to hamburger menu 
+.leftNav,
+.rightNav {
+    height: 0;
+    overflow: hidden;
+}
+
+.topMenu {
+    visibility: visible;
+}
 
 }

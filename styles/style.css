@@ -372,11 +372,63 @@ h5 {
   padding: 15px 25px;
 }
 
+.primaryNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+}
+
+.logo {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  margin: auto;
+}
+
+.leftNav,
+.rightNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 25%;
+          flex: 1 0 25%;
+}
+
+.topMenu {
+  visibility: hidden;
+  position: absolute;
+  top: 8px;
+  left: 40px;
+  font-size: 4rem;
+}
+
+@media (max-width: 1180px) {
+  .leftNav,
+  .rightNav {
+    height: 0;
+    overflow: hidden;
+  }
+  .topMenu {
+    visibility: visible;
+  }
+}
+
 /* This is the start of the header */
 header {
   height: 750px;
   background-image: url(../assets/home1.jpeg);
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* This is the start of the branding Section */
@@ -524,7 +576,6 @@ div .circleText {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,8 +654,6 @@ div .circleText {
   -ms-grid-rows: 300px 300px;
       grid-template-rows: 300px 300px;
   grid-gap: 30px;
-  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   padding-bottom: 30px;
 }
 
@@ -685,6 +734,7 @@ div .circleText {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  max-height: 300px;
 }
 
 .seven h3 {
@@ -719,6 +769,7 @@ aside {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 700px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
@@ -737,49 +788,96 @@ aside {
 .box2 {
   background-image: url(../assets/home10.jpeg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 700px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
 }
 
-.primaryNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50px;
+@media (max-width: 1180px) {
+  header {
+    height: 600px;
+  }
+  .brandingParagraphs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+    padding: 0 0 50px 0;
+  }
+  .brandingParagraphs .brandingText {
+    padding-bottom: 30px;
+  }
+  .iconSection {
+    padding: 25px 25px 0 0;
+  }
+  .sectionContainer {
+    width: 90%;
+  }
+  .gridContainer {
+    -ms-grid-rows: (1fr)[4];
+    -ms-grid-columns: (1fr)[2];
+        grid-template: repeat(4, 1fr)/repeat(2, 1fr);
+    grid-auto-flow: row;
+  }
+  aside {
+    display: block;
+  }
+  aside .box1,
+  aside .box2 {
+    height: 500px;
+  }
 }
 
-.logo {
-  text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 50%;
-          flex: 1 0 50%;
-  margin: auto;
+@media (max-width: 950px) {
+  .testimonials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonials .previous {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .sectionContainer {
+    width: 100%;
+  }
 }
 
-.leftNav,
-.rightNav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 25%;
-          flex: 1 0 25%;
+@media (max-width: 850px) {
+  .sectionContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 50px 0 0 0;
+  }
 }
 
-.topMenu {
-  visibility: hidden;
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 4rem;
+@media (max-width: 450px) {
+  .index h1 {
+    font-size: 2.5rem;
+  }
+  .topMenu {
+    font-size: 2rem;
+    top: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  header {
+    height: 500px;
+  }
 }
 
 .blog header {
@@ -1097,8 +1195,11 @@ form input {
   padding: 0 50px;
 }
 
-.iconList p,
-address {
+.iconList p {
+  color: #999999;
+}
+
+.address address {
   color: #999999;
 }
 
@@ -1166,6 +1267,8 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 150px 0;
 }
 
@@ -1243,4 +1346,77 @@ button[type="submit"] {
   padding: 100px 0;
   border-top: 1px solid #333;
   border-color: #999999;
+}
+
+@media (max-width: 1180px) {
+  .footerContainer {
+    padding: 75px 0;
+    width: 90%;
+  }
+  .footerContainer h5 {
+    padding: 0 0 25px 0;
+  }
+  .firstFooterColumn address {
+    margin-right: 30px;
+  }
+  .secondFooterColumn {
+    line-height: 20px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .secondFooterColumn li {
+    list-style: none;
+  }
+  .copyright h5 {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 995px) {
+  .footerContainer {
+    padding: 0 50px;
+  }
+  .footerContainer h5 {
+    padding-top: 25px;
+    text-align: center;
+  }
+  .thirdFooterColumn {
+    width: 100%;
+    text-align: center;
+  }
+  .thirdFooterColumn h5 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .submitContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 25px;
+  }
+  .submitContainer input[type="email"] {
+    width: 100%;
+  }
+}
+
+@media (max-width: 755px) {
+  .footerContainer {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .firstFooterColumn address {
+    margin-right: 0;
+  }
+  .primarySocialList li {
+    padding: 15px 20px 10px 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .copyright h5 {
+    padding: 25px 0;
+  }
 }
