@@ -273,12 +273,21 @@ aside {
 }
 
 // Start of media queries
-
+@media (max-width: 1350px) {
+    .gridContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 125px;
+    }
+}
 @media (max-width: 1180px) {
     header {
         height: 600px;
     }
 
+// Stacking text in branding section
     .brandingParagraphs {
         flex-direction: column;
         width: 50%;
@@ -299,18 +308,27 @@ aside {
     .sectionContainer {
         width: 90%
     }
-// this needs work
-    .gridContainer {
-    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
-    grid-auto-flow: row;
-    }
-
+    
     aside {
         display: block;
             .box1,
             .box2 {
                 height: 500px;
             }
+    }
+}
+
+@media (max-width: 1095px) {
+    .gridContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+            img {
+                width: 200px;
+            }
+                .seven {
+                    width: 100%;
+                }
     }
 }
 
@@ -343,6 +361,7 @@ aside {
         width: 90%;
         padding: 0 0 25px 0;
     }
+
 }
 
 @media (max-width: 850px) {
@@ -377,7 +396,6 @@ aside {
                 p {
                     padding-bottom: 0;
                 }
-
     }
 
     .iconStyles {
@@ -415,6 +433,7 @@ aside {
     .iconContainer {
         width: 100%;
     }
+
 }
 
 @media (max-width: 350px) {

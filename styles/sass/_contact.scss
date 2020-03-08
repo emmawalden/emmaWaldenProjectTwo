@@ -119,24 +119,24 @@
     .topHeader {
         height: 100px;
     }
+    .topHeader {
+        h1 {
+            padding: 40px 0 50px 0; 
+        }
+            span {
+                bottom: -9px;
+            }
+    }
+
+    .topHeader h1::before {
+    padding-top: 20px;
+    width: 20%;
+    }
 }
 
 @media (max-width: 950px) {
     .contact h1 {
         font-size: 3.5rem;
-    }
-
-    .topHeader {
-        h1 {
-            padding: 0 0 50px 0; 
-        }
-            span {
-                bottom: 0;
-            }
-    }
-
-    .topHeader h1::before {
-    padding-top: 50px;
     }
 
 // Reducing padding on Contact section
@@ -208,5 +208,19 @@
             p {
                 width: 100%;
         }
+    }
+
+    .topHeader {
+        h1 {
+            padding: 20px 0 60px 0; 
+        }
+            span {
+                bottom: 10px;
+            }
+    }
+
+    .topHeader h1::before {
+        padding-top: 25px;
+        width: 30%;
     }
 }
