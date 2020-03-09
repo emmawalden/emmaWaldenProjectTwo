@@ -161,7 +161,6 @@
                 <h3>Leave a Comment</h3>
                 <form action="comment">
                     <div class="firstRow">
-                        <label class="visuallyHidden" for="name">Name</label>
                         <input type="text" id="name" placeholder="Enter your name...">
                         <label class="visuallyHidden" for="email">Email</label>
                         <input type="email" id="email" placeholder="youremail@domain.com">
@@ -227,9 +226,9 @@
                         <legend>Signup for emails and notifications below.</legend>
                         <label for="email" class="visuallyHidden">Enter your email</label>
                         <div class="submitContainer">
-                            <input id="email" type="email" placeholder="Enter your email">
+                            <input id="email" type="email" aria-label="Enter your email" placeholder="Enter your email">
                             <button type="submit" class="submit" aria-label="submit"><i
-                                    class="fas fa-long-arrow-alt-right"></i></button>
+                            class="fas fa-long-arrow-alt-right"></i></button>
                         </div>
                     </form>
                 </div>

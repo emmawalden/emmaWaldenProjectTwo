@@ -379,6 +379,11 @@ h5 {
   height: 50px;
 }
 
+.primaryNav a:hover {
+  border-bottom: 1px solid #C3DAB7;
+  border-color: #426032;
+}
+
 .logo {
   text-align: center;
   -webkit-box-flex: 1;
@@ -680,6 +685,10 @@ div .circleText {
   padding-bottom: 20px;
 }
 
+.one p {
+  color: gray;
+}
+
 .two {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -785,6 +794,12 @@ aside {
   width: 70%;
 }
 
+.box1 a:hover {
+  background-color: #C3DAB7;
+  background-color: #2b3f20;
+  color: #fff;
+}
+
 .box2 {
   background-image: url(../assets/home10.jpeg);
   background-repeat: no-repeat;
@@ -839,8 +854,8 @@ aside {
   aside {
     display: block;
   }
-  aside .box1,
-  aside .box2 {
+  .box1,
+  .box2 {
     height: 500px;
   }
 }
@@ -961,6 +976,21 @@ aside {
   .iconContainer {
     width: 100%;
   }
+  .iconStyles i {
+    font-size: 1.5rem;
+    border: 1.5px solid #333;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0 0 0;
+    border-radius: 50%;
+  }
+  .gridSection h4 {
+    padding: 75px 0 25px 0;
+  }
+  .one {
+    padding: 20px 10px 10px 20px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -1078,7 +1108,7 @@ aside {
           flex: 1 1 20px;
 }
 
-.socialList a {
+.socialList li a {
   padding-left: 10px;
 }
 
@@ -1234,6 +1264,7 @@ form input {
   margin-top: 50px;
   padding-bottom: 10px;
   text-transform: uppercase;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 1335px) {
@@ -1258,7 +1289,7 @@ form input {
   .blogPosts img {
     padding-bottom: 10px;
   }
-  .blogPosts time {
+  .blogPosts img time {
     display: block;
     margin-bottom: 20px;
   }
@@ -1268,7 +1299,7 @@ form input {
   .blogHeader h1 {
     text-align: center;
   }
-  .blogHeader p {
+  .blogHeader h1 p {
     padding-bottom: 50px;
     text-align: center;
   }
@@ -1311,7 +1342,10 @@ form input {
     text-align: left;
   }
   .blogHeader p {
-    text-align: left;
+    padding-bottom: 20px;
+  }
+  .firstItem {
+    padding-bottom: 20px;
   }
   .secondaryItems li {
     padding-right: 25px;
@@ -1464,10 +1498,16 @@ form input {
 }
 
 .secondRow button[type="submit"] {
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid #333;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.secondRow button:hover {
+  color: #C3DAB7;
+  color: #598243;
 }
 
 .contentContainer {

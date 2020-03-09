@@ -3,6 +3,11 @@
     height: 50px;
 }
 
+.primaryNav a:hover {
+    border-bottom: 1px solid $main;
+    border-color: darken($main, 50%);
+}
+
 .logo {
     text-align: center;
     flex: 1 0 50%;

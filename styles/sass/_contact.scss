@@ -13,17 +13,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 200px;
-
-    h1 {
-        padding: 75px 0 50px 0;
-        width: 20%;
-        position: relative;
-    }
-        span{
-            position: absolute;
-            bottom: -20px;
+        h1 {
+            padding: 75px 0 50px 0;
+            width: 20%;
+            position: relative;
         }
-}
+            span{
+                position: absolute;
+                bottom: -20px;
+            }
+    }
 
 .topHeader h1::before {
     content: '';
@@ -95,10 +94,17 @@
 }
 
 .secondRow button[type="submit"] {
-    background-color: $white;
+    background-color: transparent;
     border: none;
     border-bottom: 1px solid $black;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.secondRow button:hover {
+    color: $main;
+    color: darken($main, 40%);
+
 }
 
 // Image Section 
@@ -119,6 +125,7 @@
     .topHeader {
         height: 100px;
     }
+
     .topHeader {
         h1 {
             padding: 40px 0 50px 0; 
@@ -129,8 +136,8 @@
     }
 
     .topHeader h1::before {
-    padding-top: 20px;
-    width: 20%;
+        padding-top: 20px;
+        width: 20%;
     }
 }
 

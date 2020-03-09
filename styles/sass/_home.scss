@@ -192,6 +192,9 @@ div .circleText {
         h3 {
             padding-bottom: 20px;
         }
+            p {
+                color: lighten($black, 30%);
+            }
 }
 
 .two {
@@ -264,6 +267,12 @@ aside {
             }
 }
 
+.box1 a:hover {
+    background-color: $main;
+    background-color: darken($main, 60%);
+    color: $white;
+}
+
 .box2 {
     background-image: url(../assets/home10.jpeg);
     background-repeat: no-repeat;
@@ -311,11 +320,11 @@ aside {
     
     aside {
         display: block;
+        }
             .box1,
             .box2 {
                 height: 500px;
             }
-    }
 }
 
 @media (max-width: 1095px) {
@@ -425,13 +434,31 @@ aside {
     }
 
     .slides {
-    img {
+        img {
             width: 150px;
         }
     }
 
     .iconContainer {
         width: 100%;
+    }
+
+    .iconStyles i {
+    font-size: 1.5rem;
+    border: 1.5px solid $black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0 0 0;
+    border-radius: 50%;
+}
+
+    .gridSection h4 {
+        padding: 75px 0 25px 0; 
+    }
+
+    .one {
+        padding: 20px 10px 10px 20px;
     }
 
 }

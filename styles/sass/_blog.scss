@@ -55,13 +55,13 @@
         p {
             padding-bottom: 30px;
         }
-        .intro p {
-            font-weight: bold;
-            color: darken($black, 50%);
-        } 
-            p:not(.intro p) {
-                color: lighten($black, 40%);
+            .intro p {
+                font-weight: bold;
+                color: darken($black, 50%);
             }
+                p:not(.intro p) {
+                    color: lighten($black, 40%);
+                }
 }
 
 .socialList {
@@ -70,11 +70,11 @@
     width: 15%;
         li {
             flex: 1 1 20px;
-        }
             a {
                 padding-left: 10px;
             }
-}
+        }
+    }
 
 
 // Start of the blog posts section
@@ -86,6 +86,7 @@
         border-color: lighten($black, 50%);
     }
 }
+
 .blogPosts {
     display: flex;
     padding: 50px 0;
@@ -220,6 +221,7 @@ form input {
     margin-top: 50px;
     padding-bottom: 10px;
     text-transform: uppercase;
+    font-size: 1.6rem;
 
 }
 
@@ -242,11 +244,11 @@ form input {
         align-items: center;
             img {
                 padding-bottom: 10px;
-            }
                 time {
                     display: block;
                     margin-bottom: 20px;
                 }
+            }
     }
 
 // Centering heading text 
@@ -254,11 +256,11 @@ form input {
         padding-top: 50px;
         h1 {
             text-align: center;
-        }
             p {
                 padding-bottom: 50px;
                 text-align: center;
             }
+        }
     }
 
 // Stacking the admin photo & blog details
@@ -279,6 +281,7 @@ form input {
     .commentForm {
         padding: 50px 0 50px 0;
     }
+
     .firstRow {
         flex-direction: column;
         align-items: flex-start;
@@ -301,15 +304,20 @@ form input {
         h1 {
             text-align: left;
         }
-            p {
-                text-align: left
-            }
+    }
+
+    .blogHeader p {
+        padding-bottom: 20px;
+    }
+
+    .firstItem {
+        padding-bottom: 20px;
     }
 
     .secondaryItems {
-            li {
-                padding-right: 25px;
-            }
+        li {
+            padding-right: 25px;
+        }
     }
 
     .commentContainer {
@@ -326,9 +334,9 @@ form input {
     }
 
     .firstRow {
-            input {
-                width: 100%;
-            }
+        input {
+            width: 100%;
+        }
     }
 
     .secondRow button {

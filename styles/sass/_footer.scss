@@ -77,7 +77,7 @@ button[type="submit"] {
     }
 
     .firstFooterColumn address {
-    margin-right: 30px;
+        margin-right: 30px;
 }
 
     .secondFooterColumn {
@@ -108,12 +108,12 @@ button[type="submit"] {
     }
 
     .submitContainer {
-    justify-content: center;
-    padding-bottom: 25px;
-        input[type="email"] {
-            width: 100%;       
+        justify-content: center;
+        padding-bottom: 25px;
+            input[type="email"] {
+                width: 100%;       
+            }
         }
-}
 }
 
 @media (max-width: 755px) {
@@ -153,7 +153,7 @@ button[type="submit"] {
 
     .secondFooterColumn {
         text-align: center;
-            li{
+            li {
                 list-style: none;
             }
     }
