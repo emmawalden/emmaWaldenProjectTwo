@@ -348,20 +348,48 @@ form input {
 
 
 @media (max-width: 415px) {
+    .blog .wrapper {
+        width: 85%;
+    }
+
     .blog header {
         height: 200px;
     }
 
+    .secondaryItems 
+        li {
+            padding: 5px;
+        }
+
+        p, 
+        time {
+            font-size: 1.4rem;
+        }
+
     .blog h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .blog h3 {
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .blogPosts {
         padding: 20px 0;
+
+        img {
+            max-width: 200px;
+        }
     }
 
     .commentForm h3 {
         line-height: 30px;
+    }
+
+    .footerContainer {
+        padding: 0 25px;
     }
 }
 

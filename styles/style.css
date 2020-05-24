@@ -259,116 +259,154 @@ img {
 /* Start of the general font styling */
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
-  line-height: 24px;
-  letter-spacing: 0.3px;
 }
 
-nav {
+nav,
+button,
+.index h1,
+.blog h1,
+.index h2,
+.blog h2,
+.contact h2
+h5,
+.index h3,
+.blog h3,
+.contact h4,
+.blog h4,
+.index h4,
+.portfolioLink {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 1.8rem;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
 }
 
+body,
 button {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-size: 1.6rem;
-  line-height: 24px;
-  letter-spacing: 0.7px;
 }
 
 .index h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-size: 3.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.9px;
 }
 
 .blog h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.9px;
 }
 
 .contact h1 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-size: 5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.9px;
 }
 
-.index h2,
-h5 {
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.9px;
-  line-height: 24px;
-  font-weight: 400;
-  font-size: 1.8rem;
-  text-transform: uppercase;
+.contact h3,
+.index h3 {
+  font-size: 2.5rem;
+}
+
+.blog h3 {
+  font-size: 3rem;
 }
 
 .blog h2,
 .contact h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
   font-size: 3.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.9px;
 }
 
-.index h3,
+nav,
+.index h2,
+h5,
+.index h4,
 .contact h4,
 .blog h4 {
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.9px;
-  line-height: 24px;
-  font-weight: 400;
   font-size: 1.8rem;
+}
+
+nav,
+h5,
+.index h1,
+.blog h1,
+.contact h1,
+.index h2,
+.blog h2,
+.contact h2,
+.index h3,
+.blog h3,
+.contact h3,
+.contact h4,
+.blog h4,
+.index h4,
+.portfolioLink {
   text-transform: uppercase;
 }
 
-.index h4 {
-  font-family: "Montserrat", sans-serif;
-  letter-spacing: 1.8px;
+nav,
+.index h2,
+h5,
+.index h3,
+.contact h4,
+.index h4
+.blog {
   font-weight: 400;
-  line-height: 24px;
-  font-size: 2.5rem;
-  text-transform: uppercase;
 }
 
-.blog h3 {
-  font-family: "Montserrat", sans-serif;
+button,
+.index h1,
+.blog h1,
+.contact h1,
+.blog h2,
+.contact h2,
+.blog h3,
+.contact h3 {
   font-weight: 700;
-  font-size: 3rem;
-  text-transform: uppercase;
+}
+
+body,
+button,
+h5,
+.index h2,
+.index h3,
+.contact h3
+.index h4,
+.contact h4,
+.blog h4,
+.portfolioLink {
+  line-height: 24px;
+}
+
+body,
+nav {
+  letter-spacing: 0.3px;
+}
+
+button,
+.portfolioLink {
+  letter-spacing: 0.7px;
+}
+
+.index h1,
+.blog h1,
+.contact h1,
+.blog h2,
+.contact h2,
+.index h2,
+h5,
+.index h4,
+.blog h3,
+.contact h4,
+.blog h4 {
   letter-spacing: 0.9px;
+}
+
+.index h3 {
+  letter-spacing: 1.8px;
 }
 
 .contact h3 {
-  font-family: #F6F6F6;
   letter-spacing: 1.5px;
-  font-weight: 700;
-  line-height: 24px;
-  font-size: 2.5rem;
-  text-transform: uppercase;
 }
 
 .portfolioLink {
-  font-family: #C3DAB7;
   font-size: 1.4rem;
   font-weight: bold;
   background-color: #fff;
   color: #333;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  line-height: 24px;
   padding: 15px 25px;
 }
 
@@ -646,7 +684,7 @@ div .circleText {
   border-color: #8c8c8c;
 }
 
-.gridSection h4 {
+.gridSection h3 {
   text-align: center;
   padding: 150px 0 100px 0;
 }
@@ -681,7 +719,7 @@ div .circleText {
   padding: 100px 40px 40px 40px;
 }
 
-.one h3 {
+.one h4 {
   padding-bottom: 20px;
 }
 
@@ -746,7 +784,7 @@ div .circleText {
   max-height: 300px;
 }
 
-.seven h3 {
+.seven h4 {
   width: 60%;
 }
 
@@ -1374,17 +1412,39 @@ form input {
 }
 
 @media (max-width: 415px) {
+  .blog .wrapper {
+    width: 85%;
+  }
   .blog header {
     height: 200px;
   }
+  .secondaryItems
+li {
+    padding: 5px;
+  }
+  p,
+  time {
+    font-size: 1.4rem;
+  }
   .blog h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .blog h3 {
+    font-size: 2.5rem;
+    text-align: center;
   }
   .blogPosts {
     padding: 20px 0;
   }
+  .blogPosts img {
+    max-width: 200px;
+  }
   .commentForm h3 {
     line-height: 30px;
+  }
+  .footerContainer {
+    padding: 0 25px;
   }
 }
 

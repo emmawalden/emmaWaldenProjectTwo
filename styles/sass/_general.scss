@@ -34,125 +34,170 @@ img {
 }
 
 /* Start of the general font styling */
-
+// Font family
 body {
-    font-family: $secondaryFont;
-    font-size: 1.6rem;
-    line-height: 24px;
-    letter-spacing: 0.3px;
+    font-family: $secondaryFont;  
 }
 
-nav {
+nav,
+button,
+.index h1,
+.blog h1,
+.index h2,
+.blog h2,
+.contact h2
+h5,
+.index h3,
+.blog h3,
+.contact h4,
+.blog h4,
+.index h4,
+.portfolioLink {
     font-family: $mainFont;
-    font-weight: 400;
-    font-size: 1.8rem;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
 }
 
+// Font sizes
+
+body,  
 button {
-    font-family: $mainFont;
-    font-weight: 700;
     font-size: 1.6rem;
-    line-height: 24px;
-    letter-spacing: 0.7px;
+}
+
+
+.index h1 {
+    font-size: 3.7rem;
+}
+
+.blog h1 {
+    font-size: 4rem;
+}
+
+.contact h1 {
+    font-size: 5rem;
+}
+
+.contact h3,
+.index h3 {
+    font-size: 2.5rem;
+}
+
+.blog h3 {
+    font-size: 3rem;
+}
+
+
+.blog h2,
+.contact h2 {
+    font-size: 3.7rem;
+}
+
+nav,
+.index h2,
+h5,
+.index h4,
+.contact h4,
+.blog h4 {
+    font-size: 1.8rem;
 }
 
 // STYLES
 
-.index h1 {
-    font-family: $mainFont;
-    font-weight: 700;
-    font-size: 3.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.9px;
-}
-
-.blog h1 {
-    font-family: $mainFont;
-    font-weight: 700;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.9px;
-}
-
-.contact h1 {
-    font-family: $mainFont;
-    font-weight: 700;
-    font-size: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.9px;
-}
-
+nav,
+h5,
+.index h1,
+.blog h1,
+.contact h1,
 .index h2,
-h5 {
-    font-family: $mainFont;
-    letter-spacing: 0.9px;
-    line-height: 24px;
-    font-weight: 400;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-}
-
 .blog h2,
-.contact h2 {
-    font-family: $mainFont;
-    font-weight: 700;
-    font-size: 3.7rem;
+.contact h2,
+.index h3,
+.blog h3,
+.contact h3,
+.contact h4,
+.blog h4,
+.index h4,
+.portfolioLink {
     text-transform: uppercase;
-    letter-spacing: 0.9px;
 }
 
+// Font weights
+
+nav,
+.index h2,
+h5,
 .index h3,
 .contact h4,
-.blog h4 {
-    font-family: $mainFont;
-    letter-spacing: 0.9px;
-    line-height: 24px;
+.index h4
+.blog {
     font-weight: 400;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-
 }
 
-.index h4 {
-    font-family: $mainFont;
-    letter-spacing: 1.8px;
-    font-weight: 400;
-    line-height: 24px;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-
-}
-
-.blog h3 {
-    font-family: $mainFont;
+button,
+.index h1,
+.blog h1,
+.contact h1,
+.blog h2,
+.contact h2,
+.blog h3,
+.contact h3 {
     font-weight: 700;
-    font-size: 3rem;
-    text-transform: uppercase;
+}
+
+// Line heights
+
+body,  
+button,
+h5,
+.index h2,
+.index h3,
+.contact h3
+.index h4,
+.contact h4,
+.blog h4,
+.portfolioLink {
+    line-height: 24px;
+}
+
+// Letter spacing
+
+body, 
+nav {
+    letter-spacing: 0.3px;
+}
+
+button,
+.portfolioLink {
+    letter-spacing: 0.7px;
+}
+
+.index h1,
+.blog h1,
+.contact h1,
+.blog h2,
+.contact h2,
+.index h2,
+h5,
+.index h4,
+.blog h3,
+.contact h4,
+.blog h4 {
     letter-spacing: 0.9px;
+}
+
+.index h3 {
+    letter-spacing: 1.8px;
 }
 
 .contact h3 {
-    font-family: $secondary;
     letter-spacing: 1.5px;
-    font-weight: 700;
-    line-height: 24px;
-    font-size: 2.5rem;
-    text-transform: uppercase;
 }
 
 // Buttons & Link Styles
 
 .portfolioLink {
-    font-family: $main;
     font-size: 1.4rem;
     font-weight: bold;
     background-color: $white;
     color: $black;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    line-height: 24px;
     padding: 15px 25px;
-
 }
