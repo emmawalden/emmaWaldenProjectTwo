@@ -467,7 +467,7 @@ h5,
 
 /* This is the start of the header */
 header {
-  height: 750px;
+  height: 600px;
   background-image: url(../assets/home1.jpeg);
   background-size: cover;
   background-position: center;
@@ -944,6 +944,9 @@ aside {
 }
 
 @media (max-width: 850px) {
+  header {
+    height: 400px;
+  }
   .testimonials {
     padding: 25px 0;
   }
@@ -974,7 +977,7 @@ aside {
             align-items: center;
     text-align: center;
   }
-  .iconContainer h3 {
+  .iconContainer h4 {
     font-size: 1.6rem;
   }
   .iconContainer p {
@@ -1023,7 +1026,7 @@ aside {
     padding: 6px 0 0 0;
     border-radius: 50%;
   }
-  .gridSection h4 {
+  .gridSection h3 {
     padding: 75px 0 25px 0;
   }
   .one {
@@ -1032,9 +1035,6 @@ aside {
 }
 
 @media (max-width: 350px) {
-  header {
-    height: 500px;
-  }
   .imageContainer img {
     width: 200px;
   }

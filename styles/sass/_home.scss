@@ -1,7 +1,7 @@
 /* This is the start of the header */
 
 header {
-    height: 750px;
+    height: 600px;
     background-image: url(../assets/home1.jpeg);
     background-size: cover;
     background-position: center;
@@ -374,6 +374,9 @@ aside {
 }
 
 @media (max-width: 850px) {
+    header {
+        height: 400px;
+    }   
 
     .testimonials {
         padding: 25px 0;
@@ -399,7 +402,7 @@ aside {
         flex-direction: column;
         align-items: center;
         text-align: center;
-            h3 {
+            h4 {
                 font-size: 1.6rem;
             }
                 p {
@@ -453,7 +456,7 @@ aside {
     border-radius: 50%;
 }
 
-    .gridSection h4 {
+    .gridSection h3 {
         padding: 75px 0 25px 0; 
     }
 
@@ -464,9 +467,6 @@ aside {
 }
 
 @media (max-width: 350px) {
-    header {
-        height: 500px;
-    }
 
     .imageContainer img {
         width: 200px;
