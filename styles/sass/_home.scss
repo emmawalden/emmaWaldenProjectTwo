@@ -1,7 +1,7 @@
 /* This is the start of the header */
 
 header {
-    height: 600px;
+    height: 750px;
     background-image: url(../assets/home1.jpeg);
     background-size: cover;
     background-position: center;
@@ -117,6 +117,9 @@ div .circleText {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.iconWrapper {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -310,7 +313,7 @@ aside {
         width: 100%;
     }
 
-    .iconSection {
+    .iconWrapper {
         padding: 25px 25px 0 0;
     }
 
@@ -386,8 +389,8 @@ aside {
     }
 // Changing icons to be one column
 
-    .iconSection {
-        padding: 0;
+    .iconWrapper {
+        padding: 10px;
     }
 
     .sectionContainer {
